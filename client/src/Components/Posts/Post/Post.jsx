@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const Post = () => {
   return (
-    <div>Post</div>
-  )
-}
+    <>
+      <div className="col-4">.g-col-4</div>
+      <div className="col-4">.g-col-4</div>
+      <div className="col-4">.g-col-4</div>
+    </>
+  );
+};
 
-export default Post
+export default Post;

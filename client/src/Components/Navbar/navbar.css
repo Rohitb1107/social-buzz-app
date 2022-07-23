@@ -1,0 +1,26 @@
+.nav-div {
+  width: 100%;
+  background-color: aliceblue;
+}
+.site-logo {
+  margin-left: 10rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+.ul-div ul {
+  display: flex;
+  gap: 1rem;
+  margin-left: 5rem;
+  font-size: 1.2rem;
+}
+
+.ul-div a:hover {
+  text-decoration: underline;
+}
+
+.ul-div a {
+  text-decoration: none;
+  color: black;
+}
