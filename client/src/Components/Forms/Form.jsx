@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import "./form.css";
 import FileBase from "react-file-base64";
+import { useDispatch } from "react-redux";
+import { createPost } from "../../redux/actions/posts";
 
 const Form = () => {
+  const dispatch = useDispatch();
+
   const [postData, setPostData] = useState({
     creator: "",
     title: "",
@@ -19,7 +23,10 @@ const Form = () => {
     });
   }
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch(createPost(postData));
+  };
 
   const clear = () => {};
 
@@ -48,7 +55,7 @@ const Form = () => {
 
           <textarea
             name="message"
-            class="form-control my-4"
+            className="form-control my-4"
             rows="3"
             placeholder="Enter message"
             value={postData.message}
