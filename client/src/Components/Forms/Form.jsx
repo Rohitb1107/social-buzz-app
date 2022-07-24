@@ -5,8 +5,6 @@ import { useDispatch } from "react-redux";
 import { createPost } from "../../redux/actions/posts";
 
 const Form = () => {
-  const dispatch = useDispatch();
-
   const [postData, setPostData] = useState({
     creator: "",
     title: "",
@@ -14,6 +12,8 @@ const Form = () => {
     tags: "",
     selectedFile: "",
   });
+
+  const dispatch = useDispatch();
 
   function changeHandler(e) {
     const { name, value } = e.target;
@@ -26,6 +26,7 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(createPost(postData));
+    console.log(postData);
   };
 
   const clear = () => {};
