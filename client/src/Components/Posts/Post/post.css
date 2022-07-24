@@ -1,0 +1,36 @@
+.img-part img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.post-card-div {
+  background-color: #00203fff;
+  color: #adefd1ff;
+  margin-top: 1rem;
+}
+.other-part {
+  margin: 1rem 1rem 0 1rem;
+}
+
+.creator-name {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.time-part {
+  font-size: 0.8rem;
+}
+
+.title-part {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.msg-part {
+  margin-bottom: 1rem;
+}
+
+.like-del-part {
+  margin-bottom: 1rem;
+}

@@ -17,7 +17,7 @@ const Home = () => {
     <>
       <div className="container title-head">
         <div className="title">Social-Buzz</div>
-        <div className="container text-center main-content">
+        <div className="container main-content">
           <div className="row col-row-div">
             <div className="col-8">
               <Posts setCurrentId={setCurrentId} />

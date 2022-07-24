@@ -1,14 +1,5 @@
-.title-head {
-  border: 1px solid black;
-}
-
 .title {
   border: 1px solid royalblue;
   text-align: center;
   font-size: 4rem;
 }
-
-.col-row-div div {
-  border: 1px solid black;
-}
-
