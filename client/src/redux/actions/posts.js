@@ -6,7 +6,7 @@ export const getPosts = () => async (dispatch) => {
 
     dispatch({ type: "FETCH_ALL", payload: data });
   } catch (err) {
-    console.log("Get error", err.message);
+    console.log("Get error", err);
   }
 };
 
@@ -16,7 +16,7 @@ export const createPost = (post) => async (dispatch) => {
 
     dispatch({ type: "CREATE", payload: data });
   } catch (err) {
-    console.log("Post error:", err.message);
+    console.log("Post error:", err);
   }
 };
 
@@ -26,6 +26,6 @@ export const updatePost = (id, post) => async (dispatch) => {
 
     dispatch({ type: "UPDATE", payload: data });
   } catch (err) {
-    console.log("Update error:", err.message);
+    console.log("Update error:", err);
   }
 };
