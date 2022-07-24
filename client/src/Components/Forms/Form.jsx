@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./form.css";
 import FileBase from "react-file-base64";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { createPost, updatePost } from "../../redux/actions/posts";
 
 const Form = ({ currentId, setCurrentId }) => {
   const dispatch = useDispatch();
+  const post = useSelector((state) =>
+    currentId ? state.posts.find((p) => p._id === currentId) : null
+  );
+
+  useEffect(() => {
+    if (post) {
+      setPostData(post);
+    }
+  }, [post]);
 
   const [postData, setPostData] = useState({
     creator: "",
@@ -31,13 +40,26 @@ const Form = ({ currentId, setCurrentId }) => {
     } else {
       dispatch(createPost(postData));
     }
+
+    clear();
   };
 
-  const clear = () => {};
+  const clear = () => {
+    setCurrentId(null);
+    setPostData({
+      creator: "",
+      title: "",
+      message: "",
+      tags: "",
+      selectedFile: "",
+    });
+  };
 
   return (
     <div className="form-div">
-      <div className="form-title">Create a post</div>
+      <div className="form-title">
+        {currentId ? "Editing" : "Creating"} a post.
+      </div>
       <form onSubmit={handleSubmit}>
         <div className="form-group w-75 container">
           <input
