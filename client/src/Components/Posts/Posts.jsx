@@ -6,14 +6,12 @@ const Posts = () => {
   const posts = useSelector((state) => state.posts);
   console.log(posts);
   return (
-    <div>
-      <div className="container text-center">
-        {posts.map((post) => (
-          <div className="row" key={post._id}>
-            <Post post={post} />
-          </div>
-        ))}
-      </div>
+    <div className="container text-center">
+      {posts.map((post) => (
+        <div className="row" key={post._id}>
+          <Post post={post} />
+        </div>
+      ))}
     </div>
   );
 };
