@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./form.css";
 import FileBase from "react-file-base64";
 import { useDispatch } from "react-redux";
-import { createPost } from "../../redux/actions/posts";
+import { createPost, updatePost } from "../../redux/actions/posts";
 
-const Form = () => {
+const Form = ({ currentId, setCurrentId }) => {
   const dispatch = useDispatch();
 
   const [postData, setPostData] = useState({
@@ -25,8 +25,12 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(createPost(postData));
-    console.log(postData);
+
+    if (currentId) {
+      dispatch(updatePost(currentId, postData));
+    } else {
+      dispatch(createPost(postData));
+    }
   };
 
   const clear = () => {};

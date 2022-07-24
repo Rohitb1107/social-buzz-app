@@ -6,6 +6,7 @@ import Posts from "../Posts/Posts";
 import "./home.css";
 
 const Home = () => {
+  const [currentId, setCurrentId] = useState(null);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -19,10 +20,10 @@ const Home = () => {
         <div className="container text-center main-content">
           <div className="row col-row-div">
             <div className="col-8">
-              <Posts />
+              <Posts setCurrentId={setCurrentId} />
             </div>
             <div className="col-4">
-              <Form />
+              <Form currentId={currentId} setCurrentId={setCurrentId} />
             </div>
           </div>
         </div>
