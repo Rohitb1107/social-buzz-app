@@ -1,7 +1,10 @@
 import React from "react";
 import moment from "moment";
+import { useDispatch } from "react-redux";
+import { deletePost } from "../../../redux/actions/posts";
 
 const Post = ({ post, setCurrentId }) => {
+  const dispatch = useDispatch();
   return (
     <div className="container w-50">
       <div className="row">
@@ -30,7 +33,12 @@ const Post = ({ post, setCurrentId }) => {
             </button>
           </div>
           <div className="col-6">
-            <button className="btn btn-outline-danger">DELETE</button>
+            <button
+              className="btn btn-outline-danger"
+              onClick={() => dispatch(deletePost(post._id))}
+            >
+              DELETE
+            </button>
           </div>
         </div>
       </div>
