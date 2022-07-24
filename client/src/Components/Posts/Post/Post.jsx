@@ -1,7 +1,7 @@
 import React from "react";
 import moment from "moment";
 import { useDispatch } from "react-redux";
-import { deletePost } from "../../../redux/actions/posts";
+import { deletePost, likePost } from "../../../redux/actions/posts";
 
 const Post = ({ post, setCurrentId }) => {
   const dispatch = useDispatch();
@@ -28,8 +28,11 @@ const Post = ({ post, setCurrentId }) => {
         <div className="row">{post.message}</div>
         <div className="row">
           <div className="col-6">
-            <button className="btn btn-outline-primary">
-              {post.likeCount}
+            <button
+              className="btn btn-outline-primary"
+              onClick={() => dispatch(likePost(post._id))}
+            >
+              LIKE: {post.likeCount}
             </button>
           </div>
           <div className="col-6">
