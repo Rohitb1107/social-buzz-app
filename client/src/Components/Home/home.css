@@ -1,4 +1,7 @@
-.title {
+.main-home-div {
+  border: 1px solid tomato;
+}
+.title-div {
   border: 1px solid royalblue;
   text-align: center;
   font-size: 4rem;

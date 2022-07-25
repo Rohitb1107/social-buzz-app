@@ -7,8 +7,14 @@
 .post-card-div {
   background-color: #00203fff;
   color: #adefd1ff;
-  margin-top: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
 }
+
+.post-img {
+  border-radius: 10px;
+}
+
 .other-part {
   margin: 1rem 1rem 0 1rem;
 }

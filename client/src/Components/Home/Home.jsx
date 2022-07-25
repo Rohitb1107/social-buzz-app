@@ -15,8 +15,8 @@ const Home = () => {
 
   return (
     <>
-      <div className="container title-head">
-        <div className="title">Social-Buzz</div>
+      <div className="container main-home-div">
+        <div className="title-div">Social-Buzz</div>
         <div className="container main-content">
           <div className="row col-row-div">
             <div className="col-8">

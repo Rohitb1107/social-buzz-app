@@ -1,6 +1,6 @@
 .prod-render-div {
-  width: 20rem;
+  border: 10px solid grey;
+  width: 100%;
   display: grid;
   grid-template-columns: auto auto;
 }
-

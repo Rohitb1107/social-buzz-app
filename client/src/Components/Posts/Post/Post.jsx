@@ -9,7 +9,7 @@ const Post = ({ post, setCurrentId }) => {
   return (
     <div className="post-card-div">
       <div className="row img-part">
-        <img src={post.selectedFile} alt="" />
+        <img className="post-img" src={post.selectedFile} alt="" />
       </div>
       <div className="row other-part">
         <div className="row">
