@@ -1,9 +1,12 @@
 .main-home-div {
   background-color: aliceblue;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
 }
 .title-div {
-  background-color: #adefd1ff;
-  color: #00203fff;
+  background-color: #101820ff;
+  color: #fee715ff;
   text-align: center;
   font-size: 4rem;
 }

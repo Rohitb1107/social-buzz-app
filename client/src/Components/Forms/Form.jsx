@@ -60,7 +60,7 @@ const Form = ({ currentId, setCurrentId }) => {
   return (
     <div className="form-div">
       <div className="form-title">
-        {currentId ? "Editing" : "Creating"} a post.
+        {currentId ? "Editing" : "Create"} a post.
       </div>
       <form onSubmit={handleSubmit}>
         <div className="form-group w-75 container">

@@ -1,6 +1,9 @@
 .nav-div {
   width: 100%;
   background-color: aliceblue;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* position: fixed;
+  top: 0%; */
 }
 .site-logo {
   margin-left: 10rem;

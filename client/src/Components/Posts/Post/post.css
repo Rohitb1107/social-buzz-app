@@ -74,3 +74,17 @@
   width: 1.5rem;
   cursor: pointer;
 }
+
+.editlogo:hover {
+  background-color: #ca4e79;
+}
+
+.like-btn {
+  color: black;
+  border: 1px solid black;
+}
+
+.like-btn:hover {
+  background-color: rgb(228, 194, 194);
+  border: 1px solid rgb(228, 194, 194);
+}

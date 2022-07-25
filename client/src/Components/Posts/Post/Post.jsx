@@ -34,11 +34,11 @@ const Post = ({ post, setCurrentId }) => {
           <div className="col-6">
             <edit />
             <button
-              className="btn btn-outline-primary"
+              className="btn btn-outline-primary like-btn"
               onClick={() => dispatch(likePost(post._id))}
             >
               <img className="editlogo" src={likelogo} alt="" />
-              LIKE: {post.likeCount}
+              &nbsp; LIKE: {post.likeCount}
             </button>
           </div>
           <div className="col-6 delete-part">
