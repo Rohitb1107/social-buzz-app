@@ -19,10 +19,10 @@ const Home = () => {
         <div className="title-div">Social-Buzz</div>
         <div className="container main-content">
           <div className="row col-row-div">
-            <div className="col-8">
+            <div className="col-8 main-content-div">
               <Posts setCurrentId={setCurrentId} />
             </div>
-            <div className="col-4">
+            <div className="col-4 main-form-div">
               <Form currentId={currentId} setCurrentId={setCurrentId} />
             </div>
           </div>

@@ -16,7 +16,9 @@ const Post = ({ post, setCurrentId }) => {
       </div>
       <div className="row other-part">
         <div className="row">
-          <div className="col-6 tags-part">#love #actor</div>
+          <div className="col-6 tags-part">
+            {post.tags.split(",").map((x) => `#${x} `)}
+          </div>
           <div className="col-6 edit-part">
             <img
               className="editlogo"
