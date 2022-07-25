@@ -20,6 +20,10 @@ app.use("/", (req, res) => {
   res.send("Hello, welcome to social-buzz API.");
 });
 
+// app.use("/", (req, res) => {
+//   res.send("Hello, welcome to social-buzz API.");
+// });
+
 mongoose
   .connect(process.env.CONNECTION_URL, { useNewUrlParser: true })
   .then(() => {
