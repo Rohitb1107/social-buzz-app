@@ -1,13 +1,13 @@
 .form-div {
-  border: 1px solid black;
   margin-top: 1rem;
   padding-bottom: 1rem;
   background-color: #101820ff;
   color: #fee715ff;
+  border-radius: 10px;
 }
 
 .form-title {
   text-align: center;
   font-size: 2rem;
-  border: 1px solid black;
+  border-bottom: 1px solid #fee715ff;
 }

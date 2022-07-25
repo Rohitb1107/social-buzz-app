@@ -16,6 +16,10 @@ app.use(cors());
 
 app.use("/posts", postRoutes);
 
+app.use("/", (req, res) => {
+  res.send("Hello, welcome to social-buzz API.");
+});
+
 mongoose
   .connect(process.env.CONNECTION_URL, { useNewUrlParser: true })
   .then(() => {

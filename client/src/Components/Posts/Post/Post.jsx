@@ -32,7 +32,6 @@ const Post = ({ post, setCurrentId }) => {
         <div className="row msg-part">{post.message}</div>
         <div className="row like-del-part">
           <div className="col-6">
-            <edit />
             <button
               className="btn btn-outline-primary like-btn"
               onClick={() => dispatch(likePost(post._id))}
