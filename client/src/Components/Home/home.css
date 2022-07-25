@@ -1,8 +1,9 @@
 .main-home-div {
-  border: 1px solid tomato;
+  background-color: aliceblue;
 }
 .title-div {
-  border: 1px solid royalblue;
+  background-color: #adefd1ff;
+  color: #00203fff;
   text-align: center;
   font-size: 4rem;
 }
