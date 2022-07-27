@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <>
       <div className="container main-home-div">
-        <div className="title-div">Social-Buzz</div>
+        {/* <div className="title-div">Social-Buzz</div> */}
         <div className="container main-content">
           <div className="row col-row-div">
             <div className="col-8 main-content-div">

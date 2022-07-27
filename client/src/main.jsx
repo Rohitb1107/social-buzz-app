@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 
 import reducers from "./redux/reducers";
 
