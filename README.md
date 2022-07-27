@@ -29,10 +29,10 @@ The tech Stack I used for creating this website are :-
 4. Users can also like posts.
 
 ## Responsive :
-Our website is responsive as well.
+This website is responsive as well.
 
 ## Responsive :
-Our website is responsive as well.
+This website is responsive as well.
 
 
 ## Deploy Link :
